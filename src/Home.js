@@ -3,6 +3,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import AppsIcon from '@mui/icons-material/Apps';
 import { Avatar } from '@mui/material';
+import Search from './Search'
 
 
 function Home() {
@@ -28,6 +29,13 @@ function Home() {
            </div>
            <div className='home__body'>
 
+                <img
+                src="https://internship.sidehustle.ng/img/logo-dark.64d45129.png"
+                alt=""
+                />
+                <div className="home__inputContainer">
+                    <Search />
+                </div>
            </div>
 
         </div>
