@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import AppsIcon from '@mui/icons-material/Apps';
@@ -7,6 +7,11 @@ import Search from './Search'
 
 
 function Home() {
+    const [keyword, setKeyword] = useState("");
+    const handleChange = (e) => {
+        setKeyword(e.target.value);
+    }
+
     return (
         <div className='home'>
             
@@ -29,12 +34,12 @@ function Home() {
            </div>
            <div className='home__body'>
 
-                <img
+                { !keyword ? <img
                 src="https://internship.sidehustle.ng/img/logo-dark.64d45129.png"
                 alt=""
-                />
+                /> : <div class="home__display__keyword"> { keyword } </div>}
                 <div className="home__inputContainer">
-                    <Search />
+                    <Search  onChange = { handleChange } keyword = {keyword} />
                 </div>
            </div>
 

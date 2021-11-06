@@ -4,12 +4,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import { Button } from '@mui/material';
 
-function Search() {
+function Search({ keyword, onChange }) {
     return (
         <div className='search'>
            <div className='search__input'>
                <SearchIcon className="search__inputIcon" />
-               <input />
+               <input 
+               value ={ keyword } 
+               onChange = { (e)=> onChange(e) } />
                <MicIcon />
             </div> 
 
