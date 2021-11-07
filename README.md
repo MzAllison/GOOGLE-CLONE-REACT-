@@ -4,7 +4,8 @@ In this project we recreated google home page (https://www.google.com/) and repl
 
 ## Live link
 
-In the project directory, you can run:
+https://side-hustle-react-team-azul.vercel.app/
 
 ## HashNode link
 
+https://hashnode.com/post/our-experience-so-far-learning-react-in-sidehustle-internship-ckvpo9m8d0dsz4as12fe20h3b
